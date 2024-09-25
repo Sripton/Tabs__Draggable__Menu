@@ -28,6 +28,7 @@ window.onload = () => {
   leftArrow.style.display =
     tabNavList.scrollWidth >= window.innerWidth ? "" : "none";
 };
+
 window.onresize = () => {
   rightArrow.style.display =
     tabNavList.scrollWidth > tabNavList.clientWidth ||
@@ -50,9 +51,10 @@ tabNavList.addEventListener("mousedown", () => {
   activeDragg = true;
 });
 
-const tabsItem = document.querySelectorAll(".tab-nav-item");
-const tabsContent = document.querySelectorAll(".tab");
 // Решение 1
+
+// const tabsItem = document.querySelectorAll(".tab-nav-item");
+// const tabsContent = document.querySelectorAll(".tab");
 // tab-nav-item-active
 // function hideTab() {
 //   tabsItem.forEach((item) => item.classList.remove("tab-nav-item-active"));
@@ -78,6 +80,9 @@ const tabsContent = document.querySelectorAll(".tab");
 //   }
 // });
 
+// Решение 2
+const tabsItem = document.querySelectorAll(".tab-nav-item");
+const tabsContent = document.querySelectorAll(".tab");
 const tab_nav = (index) => {
   tabsItem.forEach((item) => {
     item.classList.remove("tab-nav-item-active");
@@ -85,7 +90,7 @@ const tab_nav = (index) => {
   tabsContent.forEach((tab) => {
     tab.classList.remove("_active-tab");
   });
-   tabsItem[index].classList.add("tab-nav-item-active");
+  tabsItem[index].classList.add("tab-nav-item-active");
   tabsContent[index].classList.add("_active-tab");
 };
 tab_nav(0);

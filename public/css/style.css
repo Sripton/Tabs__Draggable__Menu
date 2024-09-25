@@ -67,6 +67,7 @@ section {
 .tab-nav-item-active {
   background-color: #5b85ff;
 }
+
 .left-btn,
 .right-btn {
   position: absolute;
@@ -93,7 +94,6 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
-  transform-style: preserve-3d;
 }
 .tab {
   position: absolute;
@@ -155,33 +155,6 @@ section {
   margin-bottom: 30px;
   cursor: pointer;
 }
-/* .title-subject {
-  color: #2d3f75;
-  font-size: 5em;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 0 5px 5px #928f8f;
-} */
-
-/* .info-btn {
-  width: fit-content;
-  font-size: 1rem;
-  margin-bottom: 10px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  letter-spacing: 2px;
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  text-shadow: 0 5px 10px #928f8f;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-.info-btn:hover {
-  background: #fff;
-  text-shadow: 0 5px 3px #282626;
-  color: #000;
-} */
 
 @media (max-width: 1050px) {
   .main-containe {
